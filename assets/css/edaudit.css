@@ -1,0 +1,258 @@
+.audit_container{
+    position: fixed!important;
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    left: 50%;
+    z-index: 9999999;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: none;
+    background: #FFF;
+    opacity: 0;
+}
+#edirect-audit{font-family: 'Dosis';}
+#edirect-audit .title_test{
+    text-align:center;
+
+    font-size:30px;
+    font-weight: 800;
+    color: #3498db;
+    text-transform: uppercase;
+}
+.gen_progress {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 58px;
+    position: relative;
+    display: none;
+}
+
+.gen_progress .progress {
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.gen_progress.progress, .gen_progress .progress {
+    background: #BBDBFB;
+    border-radius: 32px;
+    height: 12px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.gen_progress .progress {
+    height: 28px;
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.gen_progress .progress-bar {
+    position: absolute;
+    border-radius: 32px;
+}
+.progress .progress-bar-price {
+    display: inline-block;
+    width: 78px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 39px;
+    height: 78px;
+    top: -24px;
+    left: auto !important;
+    right: -20px;
+    line-height: 78px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-left: -35px;
+    background-color: #1abc9c;
+    z-index: 1;
+    -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.gen_progress .progress-bar,.gen_progress .progress .progress-bar-price {
+    background-color: #3e8ad6;
+}
+.steps_form h3{text-transform: uppercase;color:#242424; text-align: center; margin-bottom: 40px;}
+#ed_close_btn {
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    display: none;
+    font-size: 28px;
+    color: #757887;
+}
+#ed_close_btn:hover {color: #3498db;}
+.audit_container #ed_close_btn {
+    display: block;
+}
+.audit_container .fui-cross{
+    display: inline-block;
+    font-family: Flat-UI-Pro-Icons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.audit_container .fui-cross:before {
+    content: "\e609";
+}
+.main-audit
+{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 30px 0;
+    min-height: 500px;
+}
+.main-audit .checkbox, .main-audit .radio {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 1.5;
+    -webkit-transition: color .25s linear;
+    transition: color .25s linear;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-family: Lato; */
+    font-weight: 800;
+}
+.checkbox input[type=checkbox].custom-checkbox, .radio input[type=checkbox].custom-checkbox, .checkbox input[type=radio].custom-radio, .radio input[type=radio].custom-radio {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    outline: 0!important;
+    opacity: 0;
+    margin-left: -45px;
+}
+.checkbox .icons, .radio .icons {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #bdc3c7;
+    text-align: center;
+    cursor: pointer;
+    margin-left: -45px;
+}
+.checkbox input[type=checkbox].custom-checkbox:checked+.icons, .radio input[type=checkbox].custom-checkbox:checked+.icons, .checkbox input[type=radio].custom-radio:checked+.icons, .radio input[type=radio].custom-radio:checked+.icons {
+    color: #3881bc;
+}
+.checkbox .icon-checked, .radio .icon-checked, .checkbox .icon-unchecked, .radio .icon-unchecked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-table;
+    margin: 0;
+    background-color: transparent;
+    filter: none;
+    opacity: 1;
+    -webkit-transition: color .25s linear;
+    transition: color .25s linear;
+    -webkit-filter: none;
+}
+.checkbox input[type=checkbox].custom-checkbox:checked+.icons .icon-unchecked, .radio input[type=checkbox].custom-checkbox:checked+.icons .icon-unchecked, .checkbox input[type=radio].custom-radio:checked+.icons .icon-unchecked, .radio input[type=radio].custom-radio:checked+.icons .icon-unchecked {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.checkbox .icon-checked:before, .radio .icon-checked:before, .checkbox .icon-unchecked:before, .radio .icon-unchecked:before {
+    font-family: Flat-UI-Pro-Icons;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.radio .icon-unchecked:before {
+    content: "\e60b";
+}
+
+.checkbox input[type=checkbox].custom-checkbox:checked+.icons .icon-checked, .radio input[type=checkbox].custom-checkbox:checked+.icons .icon-checked, .checkbox input[type=radio].custom-radio:checked+.icons .icon-checked, .radio input[type=radio].custom-radio:checked+.icons .icon-checked {
+    color: #3881bc;
+    filter: none;
+    opacity: 1;
+    -webkit-filter: none;
+}
+.radio .icon-checked:before {
+    content: "\e60c";
+}
+.main-audit .container-btn{width:30%; margin: 50px auto;}
+.main-audit .container-btn a
+{
+    font-weight: 600;
+    background-color: #BEC1C3;
+    COLOR: #FFFFFF;
+}
+.main-audit .container-btn a.linkPrevious{
+    margin-top: 10px;
+    background-color: transparent;
+    color: #3498db;
+}
+.main-audit .container-btn a.linkPrevious:hover{color: #2f4154;}
+.container-logo {
+    position: absolute;
+    left: 56px;
+    top: 5px;
+}
+.container-logo img {
+    height:70px;
+    width:auto;
+}
+.genSlide{
+    width: 60%;
+    margin: 0 auto;
+}
+.genSlide label{text-align: left;}
+.genSlide input[type="submit"]{height:auto;}
+.final-success{letter-spacing:0;display:block;text-align:center;padding:40px 30px 35px 30px;font-size:1.2em;line-height:normal;z-index:999;display:none;color:#1daa1d}
+.final-success .fui-check{display:block;-webkit-animation:successIn .8s;animation:successIn .8s;color:inherit;font-size:1.6em;margin-bottom:.3em}html .formcraft-css .fc-form .final-success .icon-ok-circle::before{opacity:.8}
+.final-success span{display:block;-webkit-animation:successIn .8s;animation:successIn .8s;color:inherit}
+.error_input {
+    border:1px solid red!important;
+
+}
+.error_input::-webkit-input-placeholder {
+    color: red!important;
+}
+@-webkit-keyframes successIn{0%{opacity:0;transform:translate3d(0,200px,0);-webkit-transform:translate3d(0,200px,0)}100%{opacity:1;transform:translate3d(0,0,0) scale(1);-webkit-transform:translate3d(0,0,0) scale(1)}}
+@keyframes successIn{0%{opacity:0;transform:translate3d(0,200px,0);-webkit-transform:translate3d(0,200px,0)}100%{opacity:1;transform:translate3d(0,0,0) scale(1);-webkit-transform:translate3d(0,0,0) scale(1)}}
